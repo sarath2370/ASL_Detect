@@ -3,7 +3,7 @@ from cvzone.HandTrackingModule import HandDetector
 import numpy as np
 import math
 import time
-
+import mediapipe as mp
 
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
@@ -12,8 +12,7 @@ imgSize = 300
 offset = 20
 counter = 0
 
-folder = "SignData/C"
-
+folder = "SignData/D"
 
 while True:
     success, img = cap.read()

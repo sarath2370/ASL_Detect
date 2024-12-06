@@ -3,6 +3,8 @@ from cvzone.HandTrackingModule import HandDetector
 from cvzone.ClassificationModule import Classifier
 import numpy as np
 import math
+import mediapipe as mp
+import tensorflow
 
 
 cap = cv2.VideoCapture(0)
